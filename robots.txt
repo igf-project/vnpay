@@ -1,0 +1,7 @@
+User-agent:*
+Disallow:/
+Disallow:/include/
+Disallow:/libs/
+Disallow:/admincp/
+Disallow:/lien-he/
+Sitemap: http://thietkegiapha.vn/sitemap.xml

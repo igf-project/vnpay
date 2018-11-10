@@ -1,0 +1,185 @@
+RewriteEngine On
+RewriteRule ^home/?$ 								index.php
+RewriteRule ^login/?$								index.php?com=user&task=login
+RewriteRule ^dashboard/?$ 							index.php?com=user&task=dashboard
+RewriteRule ^logout/?$ 	 							logout.php
+RewriteRule ^profile/?$ 							index.php?com=user&task=profile
+RewriteRule ^forgotpass/?$  						index.php?com=user&task=forgot
+RewriteRule ^changepass/?$  						index.php?com=user&task=changepass
+RewriteRule ^changetpass/?$  						index.php?com=user&task=changetpass
+
+# Config
+RewriteRule ^config/?$ 	index.php?com=config
+
+# Slider
+RewriteRule ^slider/?$ 								index.php?com=slider
+RewriteRule ^slider/add?$ 							index.php?com=slider&task=add
+RewriteRule ^slider/edit/([0-9]+)?$ 				index.php?com=slider&task=edit&id=$1
+RewriteRule ^slider/delete/([0-9]+)?$ 				index.php?com=slider&task=delete&id=$1
+
+#Category
+RewriteRule ^category/?$ 							index.php?com=category
+RewriteRule ^category/add?$ 						index.php?com=category&task=add
+RewriteRule ^category/edit/([0-9]+)?$ 				index.php?com=category&task=edit&id=$1
+RewriteRule ^category/delete/([0-9]+)?$ 			index.php?com=category&task=delete&id=$1
+
+# Contents
+RewriteRule ^contents/?$ 							index.php?com=contents
+RewriteRule ^contents/add?$ 						index.php?com=contents&task=add
+RewriteRule ^contents/edit/([0-9]+)?$ 				index.php?com=contents&task=edit&id=$1
+RewriteRule ^contents/active/([0-9]+)?$ 			index.php?com=contents&task=active&id=$1
+RewriteRule ^contents/delete/([0-9]+)?$ 			index.php?com=contents&task=delete&id=$1
+RewriteRule ^contents/category/([0-9]+)?$ 			index.php?com=contents&task=list&cate=$1
+
+
+# Cate_service
+RewriteRule ^cate_service/?$ 						index.php?com=cate_service
+RewriteRule ^cate_service/add?$ 					index.php?com=cate_service&task=add
+RewriteRule ^cate_service/edit/([0-9]+)?$ 			index.php?com=cate_service&task=edit&id=$1
+RewriteRule ^cate_service/delete/([0-9]+)?$ 		index.php?com=cate_service&task=delete&id=$1
+
+# Service
+RewriteRule ^service/?$ 							index.php?com=service
+RewriteRule ^service/add?$ 							index.php?com=service&task=add
+RewriteRule ^service/edit/([0-9]+)?$ 				index.php?com=service&task=edit&id=$1
+RewriteRule ^service/active/([0-9]+)?$ 				index.php?com=service&task=active&id=$1
+RewriteRule ^service/delete/([0-9]+)?$ 				index.php?com=service&task=delete&id=$1
+RewriteRule ^service/cate_service/([0-9]+)?$ 		index.php?com=service&task=list&cate=$1
+
+
+#Cate_intro
+RewriteRule ^cate_intro/?$ 							index.php?com=cate_intro
+RewriteRule ^cate_intro/add?$ 						index.php?com=cate_intro&task=add
+RewriteRule ^cate_intro/edit/([0-9]+)?$ 			index.php?com=cate_intro&task=edit&id=$1
+RewriteRule ^cate_intro/delete/([0-9]+)?$ 			index.php?com=cate_intro&task=delete&id=$1
+
+# Intro
+RewriteRule ^intro/?$ 								index.php?com=intro
+RewriteRule ^intro/add?$ 							index.php?com=intro&task=add
+RewriteRule ^intro/edit/([0-9]+)?$ 					index.php?com=intro&task=edit&id=$1
+RewriteRule ^intro/active/([0-9]+)?$ 				index.php?com=intro&task=active&id=$1
+RewriteRule ^intro/delete/([0-9]+)?$ 				index.php?com=intro&task=delete&id=$1
+RewriteRule ^intro/cate_intro/([0-9]+)?$ 			index.php?com=intro&task=list&cate=$1
+
+# Menu
+RewriteRule ^menus/?$ 								index.php?com=menus
+RewriteRule ^menus/add?$ 							index.php?com=menus&task=add
+RewriteRule ^menus/edit/([0-9]+)?$ 					index.php?com=menus&task=edit&id=$1
+RewriteRule ^menus/active/([0-9]+)?$ 				index.php?com=menus&task=active&id=$1
+RewriteRule ^menus/delete/([0-9]+)?$ 				index.php?com=menus&task=delete&id=$1
+
+# Menu
+RewriteRule ^mnuitem/?$ 							index.php?com=mnuitem
+RewriteRule ^mnuitem/([0-9]+)?$ 					index.php?com=mnuitem&task=list&mnuid=$1
+RewriteRule ^mnuitem/add?$ 							index.php?com=mnuitem&task=add
+RewriteRule ^mnuitem/edit/([0-9]+)?$ 				index.php?com=mnuitem&task=edit&id=$1
+RewriteRule ^mnuitem/active/([0-9]+)?$ 				index.php?com=mnuitem&task=active&id=$1
+RewriteRule ^mnuitem/delete/([0-9]+)?$ 				index.php?com=mnuitem&task=delete&id=$1
+
+# Module
+RewriteRule ^module/?$ 								index.php?com=module
+RewriteRule ^module/add?$ 							index.php?com=module&task=add
+RewriteRule ^module/edit/([0-9]+)?$ 				index.php?com=module&task=edit&id=$1
+RewriteRule ^module/active/([0-9]+)?$ 				index.php?com=module&task=active&id=$1
+RewriteRule ^module/delete/([0-9]+)?$ 				index.php?com=module&task=delete&id=$1
+
+
+# Cate_recruitment
+RewriteRule ^cate_recruitment/?$ 					index.php?com=cate_recruitment
+RewriteRule ^cate_recruitment/add?$ 				index.php?com=cate_recruitment&task=add
+RewriteRule ^cate_recruitment/edit/([0-9]+)?$ 		index.php?com=cate_recruitment&task=edit&id=$1
+RewriteRule ^cate_recruitment/delete/([0-9]+)?$ 	index.php?com=cate_recruitment&task=delete&id=$1
+
+# Recruitment
+RewriteRule ^recruitment/?$ 							index.php?com=recruitment
+RewriteRule ^recruitment/add?$ 							index.php?com=recruitment&task=add
+RewriteRule ^recruitment/edit/([0-9]+)?$ 				index.php?com=recruitment&task=edit&id=$1
+RewriteRule ^recruitment/active/([0-9]+)?$ 				index.php?com=recruitment&task=active&id=$1
+RewriteRule ^recruitment/delete/([0-9]+)?$ 				index.php?com=recruitment&task=delete&id=$1
+RewriteRule ^recruitment/cate_recruitment/([0-9]+)?$ 	index.php?com=recruitment&task=list&cate=$1
+
+
+# Cate_guide
+RewriteRule ^cate_guide/?$ 							index.php?com=cate_guide
+RewriteRule ^cate_guide/add?$ 						index.php?com=cate_guide&task=add
+RewriteRule ^cate_guide/edit/([0-9]+)?$ 			index.php?com=cate_guide&task=edit&id=$1
+RewriteRule ^cate_guide/delete/([0-9]+)?$ 			index.php?com=cate_guide&task=delete&id=$1
+
+# Guide
+RewriteRule ^guide/?$ 								index.php?com=guide
+RewriteRule ^guide/add?$ 							index.php?com=guide&task=add
+RewriteRule ^guide/edit/([0-9]+)?$ 					index.php?com=guide&task=edit&id=$1
+RewriteRule ^guide/active/([0-9]+)?$ 				index.php?com=guide&task=active&id=$1
+RewriteRule ^guide/delete/([0-9]+)?$ 				index.php?com=guide&task=delete&id=$1
+RewriteRule ^guide/cate_guide/([0-9]+)?$ 			index.php?com=guide&task=list&cate=$1
+
+
+#Cate_partner
+RewriteRule ^cate_partner/?$ 						index.php?com=cate_partner
+RewriteRule ^cate_partner/add?$ 					index.php?com=cate_partner&task=add
+RewriteRule ^cate_partner/edit/([0-9]+)?$ 			index.php?com=cate_partner&task=edit&id=$1
+RewriteRule ^cate_partner/delete/([0-9]+)?$ 		index.php?com=cate_partner&task=delete&id=$1
+
+# Intro
+RewriteRule ^partner/?$ 							index.php?com=partner
+RewriteRule ^partner/add?$ 							index.php?com=partner&task=add
+RewriteRule ^partner/edit/([0-9]+)?$ 				index.php?com=partner&task=edit&id=$1
+RewriteRule ^partner/active/([0-9]+)?$ 				index.php?com=partner&task=active&id=$1
+RewriteRule ^partner/delete/([0-9]+)?$ 				index.php?com=partner&task=delete&id=$1
+RewriteRule ^partner/cate_partner/([0-9]+)?$ 		index.php?com=partner&task=list&cate=$1
+
+
+# Question_group
+RewriteRule ^question_group/?$ 						index.php?com=question_group
+RewriteRule ^question_group/add?$ 					index.php?com=question_group&task=add
+RewriteRule ^question_group/edit/([0-9]+)?$ 		index.php?com=question_group&task=edit&id=$1
+RewriteRule ^question_group/delete/([0-9]+)?$ 		index.php?com=question_group&task=delete&id=$1
+
+# Question
+RewriteRule ^question/?$ 							index.php?com=question
+RewriteRule ^question/add?$ 						index.php?com=question&task=add
+RewriteRule ^question/edit/([0-9]+)?$ 				index.php?com=question&task=edit&id=$1
+RewriteRule ^question/active/([0-9]+)?$ 			index.php?com=question&task=active&id=$1
+RewriteRule ^question/delete/([0-9]+)?$ 			index.php?com=question&task=delete&id=$1
+RewriteRule ^question/question_group/([0-9]+)?$ 	index.php?com=question&task=list&cate=$1
+
+
+# Document_type
+RewriteRule ^document_type/?$ 						index.php?com=document_type
+RewriteRule ^document_type/add?$ 					index.php?com=document_type&task=add
+RewriteRule ^document_type/edit/([0-9]+)?$ 			index.php?com=document_type&task=edit&id=$1
+RewriteRule ^document_type/active/([0-9]+)?$ 		index.php?com=document_type&task=active&id=$1
+RewriteRule ^document_type/delete/([0-9]+)?$ 		index.php?com=document_type&task=delete&id=$1
+
+# Document
+RewriteRule ^document/?$ 							index.php?com=document
+RewriteRule ^document/add?$ 						index.php?com=document&task=add
+RewriteRule ^document/edit/([0-9]+)?$ 				index.php?com=document&task=edit&id=$1
+RewriteRule ^document/active/([0-9]+)?$ 			index.php?com=document&task=active&id=$1
+RewriteRule ^document/delete/([0-9]+)?$ 			index.php?com=document&task=delete&id=$1
+RewriteRule ^document/document_type/([0-9]+)?$ 		index.php?com=document&task=list&cate=$1
+
+
+# User
+RewriteRule ^user/?$ 								index.php?com=user
+RewriteRule ^user/add?$ 							index.php?com=user&task=add
+RewriteRule ^user/edit/([0-9]+)?$ 					index.php?com=user&task=edit&id=$1
+RewriteRule ^user/active/([0-9]+)?$ 				index.php?com=user&task=active&id=$1
+RewriteRule ^user/delete/([0-9]+)?$ 				index.php?com=user&task=delete&id=$1
+RewriteRule ^user/changepass/([0-9]+)?$ 			index.php?com=user&task=changepass&id=$1
+
+
+# Mail
+RewriteRule ^mail/?$ 								index.php?com=mail
+RewriteRule ^mail/([0-9]+)?$ 						index.php?com=mail&task=view&id=$1
+RewriteRule ^mail/outbox?$ 							index.php?com=mail&task=outbox
+RewriteRule ^mail/new?$ 							index.php?com=mail&task=new
+RewriteRule ^mail/config?$ 							index.php?com=mail&task=config
+
+php_flag display_errors  on
+php_value memory_limit 300M
+php_value post_max_size 1000M
+php_value upload_max_filesize 300M
+
+php_value max_input_time 3000
+php_value max_execution_time 3000 
